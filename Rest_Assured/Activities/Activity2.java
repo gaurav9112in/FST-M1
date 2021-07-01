@@ -21,7 +21,7 @@ public class Activity2 {
         // Import JSON file
         FileInputStream inputJSON = new FileInputStream("userinfo.json");
         // Read JSON file as String
-        String reqBody =  "";  // new String(inputJSON.read());
+        String reqBody = new String(inputJSON.readAllBytes());  // new String(inputJSON.read());
         
 		        		
         System.out.println(reqBody);
