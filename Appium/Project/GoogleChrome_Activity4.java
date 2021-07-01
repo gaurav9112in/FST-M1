@@ -19,7 +19,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 // Goal: Opening a page on the browser and testing a to-do list page
-public class GoogleChrome_Activity1 {
+public class GoogleChrome_Activity4 {
 	
 	AppiumDriver<MobileElement> driver = null;
 	WebDriverWait wait;

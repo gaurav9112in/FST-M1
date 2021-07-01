@@ -19,7 +19,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 
 //Goal: Opening a page on the browser and testing a simple login page with correct and incorrect credentials
-public class GoogleChrome_Activity2 {
+public class GoogleChrome_Activity5 {
 	
 	AppiumDriver<MobileElement> driver = null;
 	WebDriverWait wait;
