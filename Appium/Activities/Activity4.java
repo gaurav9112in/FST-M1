@@ -28,8 +28,8 @@ public class Activity4 {
         caps.setCapability("deviceName", "Pixel4Emulator");
         caps.setCapability("platformName", "Android");
         caps.setCapability("automationName", "UiAutomator2");
-        caps.setCapability("appPackage", "com.google.android.dialer");
-        caps.setCapability("appActivity", ".extensions.GoogleDialtactsActivity");
+        caps.setCapability("appPackage", "com.android.contacts");
+        caps.setCapability("appActivity", ".activities.PeopleActivity");
         caps.setCapability("noReset", true);
 		
         // Instantiate Appium Driver
@@ -57,7 +57,7 @@ public class Activity4 {
 	        driver.findElementByXPath("//android.widget.Button[@text='SAVE']").click();
 	        
 	        // Get the ContactName 
-	        String contactName = driver.findElementByXPath("//android.widget.TextView[@resource-id='com.android.contacts:id/large_title']").getText();
+	        String contactName = driver.findElementById("large_title").getText();
 	        
 	        // Assertion
 	        Assert.assertEquals(contactName, "Gaurav Kumar");
