@@ -21,7 +21,8 @@ public class GitHubProjectActivity {
 	@BeforeClass
 	public void RequestSpecBuilder()
 	{
-		String AuthHeader = "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";
+		// removed the token for security purposes
+		String AuthHeader = "";
 		
 		requestSpec = new RequestSpecBuilder()
                 // Set content type
@@ -29,7 +30,7 @@ public class GitHubProjectActivity {
                 // Set base URL
                 .setBaseUri("https://api.github.com").log(LogDetail.ALL)
                 // Build request specification
-                .addHeader("Authorization", "Bearer " + AuthHeader)
+                .addHeader("Authorization", "Token "+ AuthHeader)
                 .build();
 		
 		
