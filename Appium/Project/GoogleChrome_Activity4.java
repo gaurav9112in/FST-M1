@@ -90,10 +90,12 @@ public class GoogleChrome_Activity4 {
      
      // Click on ClearList Button
      driver.findElementByXPath("//android.view.View[@resource-id='tasksCard']/android.view.View[3]").click();
-     System.out.println("All Tasks has been deleted sucessfully");
      
-     
-	}
+     // Assertion
+     MobileElement taskList = driver.findElementByXPath("//android.view.View[@resource-id='tasksList']");
+     Assert.assertFalse(taskList.isDisplayed());
+     	 
+    }
 	
     @AfterClass
     public void tearDown() {
