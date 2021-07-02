@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite" parallel="classes">
+<suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="TestNGActivities.Activity1"/>
-      <class name="TestNGActivities.Activity2"/>
+      <class name="TestNGActivities.DemoOne"/>
+      <class name="TestNGActivities.DemoTwo"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
